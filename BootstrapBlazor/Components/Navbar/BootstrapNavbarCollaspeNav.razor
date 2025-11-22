@@ -1,0 +1,13 @@
+﻿@namespace BootstrapBlazor
+@inherits BootstrapComponentBase
+
+<BootstrapCollapse Open="@Show" Class="@Classname" Style="@Style" @attributes="@AdditionalAttributes">
+    <ul class="@NavClassname">
+        @ChildContent
+    </ul>
+</BootstrapCollapse>
+
+@if (AutoClose && Show)
+{
+    <div class="navbar-backdrop" @onclick="_=>Show=false"></div>
+}

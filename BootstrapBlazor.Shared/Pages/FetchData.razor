@@ -1,0 +1,40 @@
+﻿@page "/fetchdata"
+
+<PageTitle>Weather forecast</PageTitle>
+
+@inject WeatherForecastService ForecastService
+
+<h1>Weather forecast</h1>
+
+<p>This component demonstrates fetching data from a service.</p>
+
+@if (forecasts == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <BootstrapTable Items="@forecasts" Bordered Hoverable Striped>
+        <THeadContent>
+            <th>Date</th>
+            <th>Temp. (C)</th>
+            <th>Temp. (F)</th>
+            <th>Summary</th>
+        </THeadContent>
+        <Columns>
+            <TableColumn>@context.Date.ToShortDateString()</TableColumn>
+            <TableColumn>@context.TemperatureC</TableColumn>
+            <TableColumn>@context.TemperatureF</TableColumn>
+            <TableColumn>@context.Summary</TableColumn>
+        </Columns>
+    </BootstrapTable>
+}
+
+@code {
+    private WeatherForecast[]? forecasts;
+
+    protected override async Task OnInitializedAsync()
+    {
+        forecasts = await ForecastService.GetForecastAsync(DateTime.Now);
+    }
+}

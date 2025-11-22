@@ -1,0 +1,38 @@
+﻿@namespace BootstrapBlazor
+@inherits BootstrapComponentBase
+
+<div @ref="@Element" class="@Classname" style="@Stylelist" @attributes="@AdditionalAttributes">
+    @if(ActiveContent is not null)
+    {
+        <label @onclick="@Toggle">@ActiveContent</label>
+    }
+    else
+    {
+        <button type="button" class="@BtnClassname" @onclick="@OnclickTextButton">@ButtonText</button>
+        @if (SplitButton)
+        {
+            <button type="button" class="@SplitBtnClassname" @onclick="@Toggle">
+                <span class="visually-hidden">Toggle Dropdown</span>
+            </button>
+        }
+    }
+    <ul class="@MenuClassname">
+        @if (ChildContent != null)
+        {
+            @ChildContent
+        }
+        else
+        {
+            if (!string.IsNullOrWhiteSpace(HeaderText))
+            {
+                <li><h6 class="dropdown-header">@HeaderText</h6></li>
+            }
+            @MenuContent
+        }
+
+        @if (Show)
+        {
+            <div class="dropdown-overlay" @onclick="@Toggle"></div>
+        }
+    </ul>
+</div>

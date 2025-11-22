@@ -1,0 +1,16 @@
+﻿@namespace BootstrapBlazor
+@inherits BootstrapComponentBase
+@implements IDisposable
+
+<div @ref="@Element" class="@Classname" style="@Style" @attributes="@AdditionalAttributes">
+    <h2 class="accordion-header">
+        <button class="@HeaderClassname" type="button" @onclick="@OnToggleItem">
+            @Title
+        </button>
+    </h2>
+    <BootstrapCollapse Open="@Open" Class="@CollapseClassname">
+        <div class="accordion-body">
+            @ChildContent
+        </div>
+    </BootstrapCollapse>
+</div>

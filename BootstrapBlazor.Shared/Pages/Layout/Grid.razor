@@ -1,0 +1,72 @@
+﻿@page "/layout/grid"
+
+<h3>Grid</h3>
+
+<BootstrapContainer Class="text-center">
+    <BootstrapRow>
+        <BootstrapColumn DefaultCol Style="border:solid 1px;background-color:lightsteelblue">Column</BootstrapColumn>
+        <BootstrapColumn DefaultCol Style="border:solid 1px;background-color:lightsteelblue">Column</BootstrapColumn>
+        <BootstrapColumn DefaultCol Style="border:solid 1px;background-color:lightsteelblue">Column</BootstrapColumn>
+    </BootstrapRow>
+</BootstrapContainer>
+
+<h3>Equal-width</h3>
+
+<BootstrapContainer Class="text-center">
+    <BootstrapRow>
+        <BootstrapColumn DefaultCol Style="border:solid 1px;background-color:lightsteelblue">1 of 2</BootstrapColumn>
+        <BootstrapColumn DefaultCol Style="border:solid 1px;background-color:lightsteelblue">1 of 2</BootstrapColumn>
+    </BootstrapRow>
+    <BootstrapRow>
+        <BootstrapColumn DefaultCol Style="border:solid 1px;background-color:lightsteelblue">1 of 3</BootstrapColumn>
+        <BootstrapColumn DefaultCol Style="border:solid 1px;background-color:lightsteelblue">1 of 3</BootstrapColumn>
+        <BootstrapColumn DefaultCol Style="border:solid 1px;background-color:lightsteelblue">1 of 3</BootstrapColumn>
+    </BootstrapRow>
+</BootstrapContainer>
+
+<h3>Setting one column width</h3>
+
+<BootstrapContainer Class="text-center">
+    <BootstrapRow>
+        <BootstrapColumn DefaultCol Style="border:solid 1px;background-color:lightsteelblue">1 of 3</BootstrapColumn>
+        <BootstrapColumn ColumnSize="@ColumnSize.col6" Style="border:solid 1px;background-color:lightsteelblue">1 of 3 (wider)</BootstrapColumn>
+        <BootstrapColumn DefaultCol Style="border:solid 1px;background-color:lightsteelblue">1 of 3</BootstrapColumn>
+    </BootstrapRow>
+    <BootstrapRow>
+        <BootstrapColumn DefaultCol Style="border:solid 1px;background-color:lightsteelblue">1 of 3</BootstrapColumn>
+        <BootstrapColumn ColumnSize="@ColumnSize.col5" Style="border:solid 1px;background-color:lightsteelblue">1 of 3 (wider)</BootstrapColumn>
+        <BootstrapColumn DefaultCol Style="border:solid 1px;background-color:lightsteelblue">1 of 3</BootstrapColumn>
+    </BootstrapRow>
+</BootstrapContainer>
+
+<h3>Stacked to horizontal</h3>
+
+<BootstrapContainer Class="text-center">
+    <BootstrapRow>
+        <BootstrapColumn BreakpointSm="@Breakpoint.Sm.sm8" Style="border:solid 1px;background-color:lightsteelblue">col-sm-8</BootstrapColumn>
+        <BootstrapColumn BreakpointSm="@Breakpoint.Sm.sm4" Style="border:solid 1px;background-color:lightsteelblue">col-sm-4</BootstrapColumn>
+    </BootstrapRow>
+    <BootstrapRow>
+        <BootstrapColumn BreakpointSm="@Breakpoint.Sm.sm" Style="border:solid 1px;background-color:lightsteelblue">col-sm</BootstrapColumn>
+        <BootstrapColumn BreakpointSm="@Breakpoint.Sm.sm" Style="border:solid 1px;background-color:lightsteelblue">col-sm</BootstrapColumn>
+        <BootstrapColumn BreakpointSm="@Breakpoint.Sm.sm" Style="border:solid 1px;background-color:lightsteelblue">col-sm</BootstrapColumn>
+    </BootstrapRow>
+</BootstrapContainer>
+
+<h3>Mix and match</h3>
+
+<BootstrapContainer Class="text-center">
+    <BootstrapRow>
+        <BootstrapColumn BreakpointMd="@Breakpoint.Md.md8" Style="border:solid 1px;background-color:lightsteelblue">col-md-8</BootstrapColumn>
+        <BootstrapColumn ColumnSize="@ColumnSize.col6" BreakpointMd="@Breakpoint.Md.md4" Style="border:solid 1px;background-color:lightsteelblue">col-6 col-md-4</BootstrapColumn>
+    </BootstrapRow>
+    <BootstrapRow>
+        <BootstrapColumn ColumnSize="@ColumnSize.col6" BreakpointMd="@Breakpoint.Md.md" Style="border:solid 1px;background-color:lightsteelblue">col-6 col-md-4</BootstrapColumn>
+        <BootstrapColumn ColumnSize="@ColumnSize.col6" BreakpointMd="@Breakpoint.Md.md" Style="border:solid 1px;background-color:lightsteelblue">col-6 col-md-4</BootstrapColumn>
+        <BootstrapColumn ColumnSize="@ColumnSize.col6" BreakpointMd="@Breakpoint.Md.md" Style="border:solid 1px;background-color:lightsteelblue">col-6 col-md-4</BootstrapColumn>
+    </BootstrapRow>
+    <BootstrapRow>
+        <BootstrapColumn ColumnSize="@ColumnSize.col6" Style="border:solid 1px;background-color:lightsteelblue">col-6</BootstrapColumn>
+        <BootstrapColumn ColumnSize="@ColumnSize.col6" Style="border:solid 1px;background-color:lightsteelblue">col-6</BootstrapColumn>
+    </BootstrapRow>
+</BootstrapContainer>
