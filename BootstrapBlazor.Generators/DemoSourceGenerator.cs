@@ -1,7 +1,6 @@
 ﻿using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.Text;
 using System.Collections.Immutable;
-using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -42,7 +41,7 @@ namespace BootstrapBlazor.Generators
             {
                 sb.Append("\t\t");
                 SourceText f = file.GetText(context.CancellationToken);
-                sb.AppendLine($@"{{ @""{Path.GetFileNameWithoutExtension(file.Path)}"", @""{f.ToString().Replace(@"""", @"""""")}"" }},");
+                sb.AppendLine($@"{{ @""{Path.GetFileName(file.Path)}"", @""{f.ToString().Replace(@"""", @"""""")}"" }},");
             }
             sb.AppendLine("\t\t};");
             sb.Append("\t\t");
