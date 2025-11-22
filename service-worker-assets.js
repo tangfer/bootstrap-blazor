@@ -1,5 +1,5 @@
 self.assetsManifest = {
-  "version": "1Es6rAVG",
+  "version": "KoZZWDAj",
   "assets": [
     {
       "hash": "sha256-8ZRc1sGeVrPBx4lD717BgRaQekyh78QKV9SKsdt638U=",
@@ -210,16 +210,16 @@ self.assetsManifest = {
       "url": "_content/BootstrapBlazor/exampleJsInterop.js"
     },
     {
-      "hash": "sha256-UJaPDp19rYJ909hE0eNWSJs+oGaxyW4cbK6+yu9YsnE=",
-      "url": "_framework/BootstrapBlazor.Shared.w0n7qzypf6.wasm"
+      "hash": "sha256-RwsP/aEUw2sFlDlVrv0XZ1rjNUE0yPi+JXgZ0pr92Tw=",
+      "url": "_framework/BootstrapBlazor.70glvi0r5s.wasm"
     },
     {
-      "hash": "sha256-V3BVEUk+mhNMdfcIFboYp27A/aIyoJfP48XSFU8KzAM=",
-      "url": "_framework/BootstrapBlazor.WebAssembly.70l41jq7by.wasm"
+      "hash": "sha256-zehOMYK/sYxLTzOgRz9tvYd7w7xnQPI0yLRj1zMUIcM=",
+      "url": "_framework/BootstrapBlazor.Shared.5m3u71rvv3.wasm"
     },
     {
-      "hash": "sha256-DKvdKP9Qa5B+pHnMgPJBC0/G5a7k5gmT/eenYAhzoRM=",
-      "url": "_framework/BootstrapBlazor.s46oeqg86e.wasm"
+      "hash": "sha256-6vJX3diiJCKyqXIA6Jg6CpMGvJ+ITVCHyVfsZ0vOsYo=",
+      "url": "_framework/BootstrapBlazor.WebAssembly.ylo6v3u8fh.wasm"
     },
     {
       "hash": "sha256-r1MOmltswSR22/ZG1M6N8QtFNdOMRowM6kUZdhxquV8=",
@@ -410,12 +410,12 @@ self.assetsManifest = {
       "url": "_framework/dotnet.native.8opwizmmod.wasm"
     },
     {
-      "hash": "sha256-nmm0czlYGBqhiq//Xh+X8VmnAr/WlQcdI2r+OsErwhs=",
-      "url": "_framework/dotnet.q6jdo3ne1q.js"
-    },
-    {
       "hash": "sha256-yJvgPPUUvavYVmu9VD/fYtMcoEnLVaB0Cr7JAE29btw=",
       "url": "_framework/dotnet.runtime.o0qy896u8v.js"
+    },
+    {
+      "hash": "sha256-LhyQX/dg8AMjki0/tBqVNT+2oiBJokMODt6VEuWWLUI=",
+      "url": "_framework/dotnet.y7dhz7kkq9.js"
     },
     {
       "hash": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -446,7 +446,7 @@ self.assetsManifest = {
       "url": "icon-512.png"
     },
     {
-      "hash": "sha256-75AodBXP8Dnql1IqTKuAQEWrPYYpmNfvHjrSiWoCDWA=",
+      "hash": "sha256-RH5mngttZ71yT3tijmipXzDagRyd3jGhDmRNU5ZvGWo=",
       "url": "index.html"
     },
     {
